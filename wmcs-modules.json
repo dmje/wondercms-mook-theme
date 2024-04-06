@@ -3,9 +3,9 @@
 	"themes": {
 		"sky": {
 			"name": "Mook",
-			"repo": "https://github.com/robiso/sky/tree/master",
-			"zip": "https://github.com/robiso/sky/archive/master.zip",
-			"summary": "Default WonderCMS theme (2022). Theme works without Bootstrap and jQuery.",
+			"repo": "https://github.com/dmje/wondercms-mook-theme/tree/main",
+			"zip": "https://github.com/dmje/wondercms-mook-theme/archive/refs/tags/1.0.zip",
+			"summary": "A Mook Theme",
 			"version": "1.0.0",
 			"image": "https://raw.githubusercontent.com/robiso/sky/master/preview.jpg"
 		}
