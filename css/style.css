@@ -1,0 +1,66 @@
+body{
+	font-family: sans-serif;
+	margin:0px;
+}
+
+.content {
+	display: grid;
+	grid-template-columns: 70% 30%; /* 70% main content, 30% sidebar */
+	grid-gap: 20px; /* Adjust gap between main content and sidebar */
+	padding: 20px; /* Add some padding for spacing */
+}
+
+.main-content {
+	background-color: #f0f0f0; /* Example background color */
+	padding: 20px; /* Add some padding for spacing */
+}
+
+.sidebar {
+	background-color: #ccc; /* Example background color */
+	padding: 20px; /* Add some padding for spacing */
+}
+
+
+
+/* navigation */
+
+.topnav, .footer{
+	background-color:rgb(245, 159, 159);
+	padding:10px;
+}
+
+.navigation {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation li {
+  display: inline;
+  margin-right: 10px; /* Adjust as needed */
+}
+
+.navigation li:last-child {
+  margin-right: 0;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: #333; /* Adjust color as needed */
+}
+
+.navigation li a:hover {
+  color: #ffffff; /* Adjust hover color as needed */
+}
+
+li.nav-item.active{
+	color:black;
+	font-weight: bold;
+}
+
+/* content */
+
+.content{
+	padding:20px;
+	background-color:#f6e1e1;
+}

@@ -30,32 +30,51 @@
 		<?= $Wcms->css() ?>
 		
 		<!-- Theme CSS -->
-		<link rel="stylesheet" rel="preload" as="style" href="<?= $Wcms->asset('css/style.css') ?>">
+		
+		<?php 		
+		$rnd = rand(1,10000);
+		?>
+		
+		<link rel="stylesheet" rel="preload" as="style" href="<?= $Wcms->asset('css/style.css?' . $rnd) ?>">
 
-		<!-- Optional Bootstrap CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 	</head>
 	
 <body>
+	
 	<?= $Wcms->settings() ?>
 	<?= $Wcms->alerts() ?>
 	
-	<?= $Wcms->menu() ?>
+	<nav class="topnav">	
+		<ul class="navigation">
+			<?= $Wcms->menu() ?>
+		</ul>
+	</nav>
 	
-	<hr/>
+	<div class="content">		
+		
+		<div class="main-content">
+			<?= $Wcms->page('content') ?>
+		</div>
+		<div class="sidebar">
+			<h2>Sidebar</h2>
+			<?= $Wcms->block('sidebar') ?>
+		</div>		
+		
+		
+	</div>
 	
-	<?= $Wcms->page('content') ?>
+	
+	
 
-
-
-	<?= $Wcms->footer() ?>
-
+	<footer class="footer">
+		<?= $Wcms->footer() ?>
+	</footer>
 
 
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<?= $Wcms->js() ?>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<?= $Wcms->js() ?>
 
 </body>
 </html>	
